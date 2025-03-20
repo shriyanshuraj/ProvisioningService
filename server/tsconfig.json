@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "commonjs",
+      "lib": ["es2023"],
+      "outDir": "./dist",
+      "rootDir": "server/src",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "baseUrl": ".",
+      "typeRoots": ["server/src/types","./node_modules/@types"],
+      "paths": {
+        "*": ["node_modules/*"]
+      },
+    },
+    "include": ["server/src/**/*.ts", "server/src/infra/deploy-frontend.js"],
+    "exclude": ["node_modules", "dist"]
+  } 
