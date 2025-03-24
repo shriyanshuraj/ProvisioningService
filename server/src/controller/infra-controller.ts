@@ -53,3 +53,9 @@ export async function frontendInfra(req: Request, res: Response): Promise<void> 
     res.status(500).json({ error: error.message });
   });
 }
+
+export async function deleteFrontendInfra(req: Request, res: Response){
+  res.status(200).json({
+    message: "Delete frontend infra",
+  });
+}
